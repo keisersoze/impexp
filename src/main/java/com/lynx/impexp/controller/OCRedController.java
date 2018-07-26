@@ -52,7 +52,7 @@ public class OCRedController {
     }
 
     @GetMapping("/")
-    public String home(@RequestParam("image") MultipartFile image) {
+    public String home() {
        return "Hello to tesseract application";
     }
 }
