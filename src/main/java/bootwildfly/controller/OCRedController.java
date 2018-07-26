@@ -1,11 +1,10 @@
-package com.lynx.impexp.controller;
+package bootwildfly.controller;
 
 import net.sourceforge.tess4j.ITesseract;
 import net.sourceforge.tess4j.Tesseract1;
 import net.sourceforge.tess4j.TesseractException;
 import net.sourceforge.tess4j.util.LoadLibs;
 import org.apache.commons.io.FileUtils;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -49,10 +48,5 @@ public class OCRedController {
         }
 
         return result;
-    }
-
-    @GetMapping("/")
-    public String home() {
-       return "Hello to tesseract application";
     }
 }
